@@ -33,7 +33,7 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 #### Syntax
 
-```markdown
+```shell
 ![Alt text](./full/or/relative/path/of/image)
 ```
 
