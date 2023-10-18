@@ -15,6 +15,14 @@
 	--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
 		0 16px 32px rgba(var(--gray), 33%);
 }
+/* bebas-neue-regular */
+@font-face {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/bebas-neue/bebas-neue-regular.woff2') format("woff2");
+	font-display: auto;
+}
 @font-face {
 	font-family: 'Atkinson';
 	src: url('/fonts/atkinson-regular.woff') format('woff');
@@ -29,8 +37,137 @@
 	font-style: normal;
 	font-display: swap;
 }
+/* inconsolata-black */
+@font-face {
+	font-family: Inconsolata;
+	font-style: normal;
+	font-weight: 900;
+	src: local("Inconsolata Black"), local("Inconsolata-Black"), url('/fonts/inconsolata/inconsolata-black.woff2') format("woff2");
+}
+/* inconsolata-bold */
+@font-face {
+	font-family: Inconsolata;
+	font-style: normal;
+	font-weight: 700;
+	src: local("Inconsolata Bold"), local("Inconsolata-Bold"), url('/fonts/inconsolata/inconsolata-bold.woff2') format("woff2");
+}
+/* inconsolata-extrabold */
+@font-face {
+	font-family: Inconsolata;
+	font-style: normal;
+	font-weight: 400;
+	src: local("Inconsolata ExtraBold"), local("Inconsolata-ExtraBold"), url('/fonts/inconsolata/inconsolata-extrabold.woff2') format("woff2");
+}
+/* inconsolata-extralight */
+@font-face {
+	font-family: Inconsolata;
+	font-style: normal;
+	font-weight: 400;
+	src: local("Inconsolata ExtraLight"), local("Inconsolata-ExtraLight"), url('/fonts/inconsolata/inconsolata-extralight.woff2') format("woff2");
+}
+/* inconsolata-light */
+@font-face {
+	font-family: Inconsolata;
+	font-style: normal;
+	font-weight: 300;
+	src: local("Inconsolata Light"), local("Inconsolata-Light"), url('/fonts/inconsolata/inconsolata-light.woff2') format("woff2");
+}
+/* inconsolata-medium */
+@font-face {
+	font-family: Inconsolata;
+	font-style: normal;
+	font-weight: 500;
+	src: local("Inconsolata Medium"), local("Inconsolata-Medium"), url('/fonts/inconsolata/inconsolata-medium.woff2') format("woff2");
+}
+/* inconsolata-regular */
+@font-face {
+	font-family: Inconsolata;
+	font-style: normal;
+	font-weight: 400;
+	src: local("Inconsolata Regular"), local("Inconsolata-Regular"), url('/fonts/inconsolata/inconsolata-regular.woff2') format("woff2");
+}
+/* inconsolata-semibold */
+@font-face {
+	font-family: Inconsolata;
+	font-style: normal;
+	font-weight: 400;
+	src: local("Inconsolata SemiBold"), local("Inconsolata-SemiBold"), url('/fonts/inconsolata/inconsolata-semibold.woff2') format("woff2");
+}
+/* inter-black */
+@font-face {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 900;
+	src: local("Inter Black"), local("Inter-Black"), url('/fonts/inter/inter-black.woff2') format("woff2");
+	font-display: auto;
+}
+/* inter-bold */
+@font-face {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 700;
+	src: local("Inter Bold"), local("Inter-Bold"), url('/fonts/inter/inter-bold.woff2') format("woff2");
+	font-display: auto;
+}
+/* inter-extrabold */
+@font-face {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 400;
+	src: local("Inter ExtraBold"), local("Inter-ExtraBold"), url('/fonts/inter/inter-extrabold.woff2') format("woff2");
+	font-display: auto;
+}
+/* inter-extralight */
+@font-face {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 400;
+	src: local("Inter ExtraLight"), local("Inter-ExtraLight"), url('/fonts/inter/inter-extralight.woff2') format("woff2");
+	font-display: auto;
+}
+/* inter-light */
+@font-face {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 300;
+	src: local("Inter Light"), local("Inter-Light"), url('/fonts/inter/inter-light.woff2') format("woff2");
+	font-display: auto;
+}
+/* inter-medium */
+@font-face {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 500;
+	src: local("Inter Medium"), local("Inter-Medium"), url('/fonts/inter/inter-medium.woff2') format("woff2");
+	font-display: auto;
+}
+/* inter-regular */
+@font-face {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 400;
+	src: local("Inter Regular"), local("Inter-Regular"), url('/fonts/inter/inter-regular.woff2') format("woff2");
+	font-display: auto;
+}
+/* inter-semibold */
+@font-face {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 400;
+	src: local("Inter SemiBold"), local("Inter-SemiBold"), url('/fonts/inter/inter-semibold.woff2') format("woff2");
+	font-display: auto;
+}
+/* inter-thin */
+@font-face {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 100;
+	src: local("Inter Thin"), local("Inter-Thin"), url('/fonts/inter/inter-thin.woff2') format("woff2");
+	font-display: auto;
+}
 body {
-	font-family: 'Atkinson', sans-serif;
+	font-family: 'Inter', sans-serif;
+	font-weight: 300;
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -54,6 +191,7 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: 'Bebas Neue';
 	margin: 0 0 0.5rem 0;
 	color: rgb(var(--black));
 	line-height: 1.2;
@@ -105,6 +243,7 @@ img {
 	border-radius: 8px;
 }
 code {
+	font-family: Inconsolata;
 	padding: 2px 5px;
 	background-color: rgb(var(--gray-light));
 	border-radius: 2px;
@@ -114,7 +253,7 @@ pre {
 	border-radius: 8px;
 }
 pre > code {
-	all: unset;
+
 }
 blockquote {
 	border-left: 4px solid var(--accent);
